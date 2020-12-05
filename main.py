@@ -5,6 +5,5 @@ yt = YouTube(url)
 video = yt.streams.first()
 #video.download()
 mp4 = VideoFileClip(video)
-audio = mp4.audio
-audio.write_audiofile(yt.title.mp3)
+mp4.audio.write_audiofile(yt.title)
 print("Download Complete !")
